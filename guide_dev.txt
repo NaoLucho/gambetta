@@ -1,22 +1,14 @@
 
-CLOUD PARCIPARLA
-santheqpcpl.mysql.db
-santheqpcpl
-funga-D
+CLOUD GAMBETTA
+santheqgambeta.mysql.db
+santheqgambeta
+funga-D ae
 
 ssh santheq@sshcloud.cluster024.hosting.ovh.net -p 42776
 
 /admin
 admin fungaD-
-nat T-31
-
-MULTISITE
-ssh fungafrwoh@ssh.cluster023.hosting.ovh.net -p 22
-Ecur-
-
-CLOUD
-ssh santheq@sshcloud.cluster024.hosting.ovh.net -p 42776
-funga-D
+admin pass => a modifier
 
 pwd
 ls
