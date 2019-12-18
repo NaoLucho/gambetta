@@ -18,30 +18,30 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>
-            {% block title %}Par-ci, Par-là - association club d'escalade - Lodève
+            {% block title %}Auto-école GAMBETTA, CLERMONT L'HERAULT
             {% endblock %}
         </title>
-        <meta name="description" content={% block seoDescription %} "L’association Par-ci Par-là développe les sports de pleine nature dans le Lodèvois, dans le respect de l’environnement." {% endblock %}/>
-        <meta name="keywords" content={% block seoKeywords %} "apprendre l'escalade, cours d'escalade, Parci Parlà, Par-ci Par-là, Lodève" {% endblock %}/>
+        <meta name="description" content={% block seoDescription %} "Auto-école GAMBETTA, CLERMONT L'HERAULT" {% endblock %}/>
+        <meta name="keywords" content={% block seoKeywords %} "Auto-école, CLERMONT L'HERAULT, GAMBETTA, Permi B, Permi B automatique" {% endblock %}/>
 
-        <link rel="icon" type="image/x-icon" href="{{ asset('assets/logo-parciparla-64x64.ico') }}"/>
+        <link rel="icon" type="image/x-icon" href="{{ asset('assets/logo-64x64.ico') }}"/>
 
         {% block stylesheets %}
             {# On charge le CSS de bootstrap depuis le site directement #}
 
 
             <meta name="author" content="Funga.fr">
-            <meta name="copyright" content="2019 © Parci Parlà">
+            <meta name="copyright" content="2019 © Auto-école GAMBETTA">
             <meta http-equiv="content-type" content="text/html;UTF-8">
             <meta http-equiv="content-language" content="fr">
 
             <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Parci Parlà"/>
+            <meta property="og:title" content="Auto-école GAMBETTA"/>
             <meta property="og:description" content={{ block('seoDescription') }}/>
-            <meta property="og:url" content="https://www.parci-parla.org/"/>
-            <meta property="og:site_name" content="Parci Parlà"/>
+            <meta property="og:url" content="https://www.gambetta.fr/"/>
+            <meta property="og:site_name" content="Auto-école GAMBETTA"/>
             <meta property="og:locale" content="fr_FR"/>
-            <meta property="og:image" content="https://www.parci-parla.org/assets/logo.png"/>
+            <meta property="og:image" content="https://www.gambetta.fr/site/assets/images/logo.png"/>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
             <!-- Optional theme -->
             <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
@@ -95,7 +95,7 @@
 
         {% block headerBanner %}
             <div class="banner"> 
-                <img alt="bannière principale Parci Parla" class="image_banner" src="/assets/image1-min.png"/>
+                <img alt="bannière principale" class="image_banner" src="/site/assets/images/bg1.jpg"/>
             </div>
         {% endblock %}
         
@@ -153,6 +153,9 @@
             });
         </script> #}
         {% javascripts '@BuilderPageBundle/Resources/public/js/carousel.js' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        {% javascripts '@BuilderPageBundle/Resources/public/js/menu.js' %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
         {#

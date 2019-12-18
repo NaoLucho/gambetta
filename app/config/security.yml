@@ -5,8 +5,8 @@ imports:
 
 security:
 
-    acl:
-        connection: default
+    # acl:
+    #     connection: default
 
     role_hierarchy:
         # if sonata_admin-security-handler: sonata.admin.security.handler.role

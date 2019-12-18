@@ -191,7 +191,7 @@ fos_user:
 
 # Sonata Users 
 sonata_user:
-    security_acl: true
+    security_acl: false
     manager_type: orm # can be orm or mongodb
     class:
         user: Application\Sonata\UserBundle\Entity\User
