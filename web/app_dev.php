@@ -13,7 +13,7 @@ use Symfony\Component\Debug\Debug;
 
 if (isset($_SERVER['HTTP_CLIENT_IP'])
     //|| isset($_SERVER['HTTP_X_FORWARDED_FOR']) //block in prod, need to be comment to use console
-    || !(in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1', '2.4.3.219', '2a01:cb1d:89c0:2100:f9ff:984f:a6e7:dbde']) || PHP_SAPI === 'cli-server')
+    || !(in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1', '92.167.5.1']) || PHP_SAPI === 'cli-server')
 ) {
     header('HTTP/1.0 403 Forbidden');
     exit(' You are not allowed to access this file. Check '.basename(__FILE__).' for more information.'. $_SERVER['REMOTE_ADDR'].' A:'.isset($_SERVER['HTTP_CLIENT_IP']).' B:'.isset($_SERVER['HTTP_X_FORWARDED_FOR']).' C:'.!(in_array(@$_SERVER['REMOTE_ADDR'], ['127.0.0.1', '::1', '2.4.15.190'])));

@@ -20,18 +20,18 @@ DirectoryIndex app.php
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # SI acccenttonique.funga pour l'admin
-    # RewriteCond %{REQUEST_URI} !^https://accenttonique.funga.fr/admin
-    RewriteCond %{HTTP_HOST} ^accenttonique.funga.fr$
+    # SI site.funga pour l'admin
+    # RewriteCond %{REQUEST_URI} !^https://site.funga.fr/admin
+    RewriteCond %{HTTP_HOST} ^gambetta.funga.fr$
     # Exception qui ne fonctionne pas...
-    # RewriteRule ^accenttonique.funga.fr/admin(.*)$  - [L]
-    RewriteRule ^(.*)$ https://www.cours-espagnol-toulouse-at.com/$1 [R=301,L]
+    # RewriteRule ^site.funga.fr/admin(.*)$  - [L]
+    RewriteRule ^(.*)$ https://www.gambetta.funga.fr/$1 [R=301,L]
     
     #Rediriger le http vers https
     RewriteCond %{HTTP:X-Forwarded-Port} 80 
     # RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
     # RewriteCond %{SERVER_PORT} 80
-    RewriteRule ^(.*)$ https://www.cours-espagnol-toulouse-at.com/$1 [R=301,L]
+    RewriteRule ^(.*)$ https://www.gambetta.funga.fr/$1 [R=301,L]
     
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the

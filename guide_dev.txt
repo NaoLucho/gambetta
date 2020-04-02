@@ -48,3 +48,4 @@ sonata-project/user-bundle dev-master (f0f67e0 => 86c1ebc)
 
 Erreur Forbidden admin prod lors d'édition de content
 Pas de solution pour l'instant, utiliser l'ancien site accenttonique.funga.fr/admin en modifiant le .htaccess
+solution résolue, toute seule? en attendant je crois...

@@ -7,8 +7,7 @@ parameters:
     database_port: null
     database_name: santheqgambetta
     database_user: santheqgambetta
-    database_password: fungaD-
-    
+    database_password: funga-ae
     mailer_transport: gmail
     mailer_host: null
     mailer_user: louis.watrin@gmail.com
@@ -17,6 +16,6 @@ parameters:
     project_name: gambetta
     upload_prefix: /uploads
     image_prefix: '%upload_prefix%/img'
-    secret: teresasecret
+    secret: secret
     template_repo: site
-    table_prefix: ae_
+    table_prefix: ae__
